@@ -1,0 +1,121 @@
+/* The asterisk applies these rules to every single element on the web page to reset browser defaults */
+* {
+    margin: 0;       
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000;      
+    display: flex;               
+    justify-content: center;      
+    align-items: center;
+    height: 100vh;                 
+}
+
+
+.LoginInputBox {
+    text-align: center;             
+    width: 100%;                    
+    max-width: 500px;               
+    padding: 20px;               
+    border-radius: 20px;
+}
+
+
+h1 {
+    font-size: 4.2rem;             
+    color: #ffffff;                
+    margin-bottom: 100px;           
+}
+
+
+.SubTxt {
+    
+    font-weight:bold;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;             
+    color: #ffffff;               
+    margin-bottom: 100px;               
+}
+
+
+form {
+    display: flex;              
+    flex-direction: column;     
+    gap: 20px;                
+}
+
+
+        
+/*Style based on type instead of class*/
+input[type="text"],
+input[type="password"] {
+    width: 100%;                   
+    padding: 15px;                  
+    font-size: 1rem;               
+    border: 1px solid #333333;      
+    background-color: #ffffff;     
+    outline: none;               
+    text-align: center;            
+    border-radius:20px;
+}
+
+
+/*For input error msg*/
+input.ErrorStatus::placeholder {
+    color: #ff0000;                
+    opacity: 1;
+    font-weight:bold;
+}
+
+
+.LoginBtn {
+    width: 100%;                   
+    padding: 15px;                
+    font-size: 1rem;             
+    border: 1px solid #333333;      
+    background-color: #ffffff;     
+    color: #333333;               
+    cursor: pointer;               
+    text-transform: uppercase;     
+    transition: all 0.2s ease;     
+    border-radius:20px;
+}
+
+
+.LoginBtn:hover {
+    background-color: #000000;    
+    color: #ffffff;                
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/* Layout logic organizing your cookie time tracking widgets below */
+.visit-box-container {
+    margin-top: 40px;               /* Pushes the visit tracker down cleanly away from your interactive form */
+    text-align: center;             /* Centers the text content horizontally */
+}
+
+/* Font styles styling your static "Last Visit:" title heading */
+.visit-label {
+    font-size: 1.1rem;              /* Sets standard clean text visibility */
+    color: #333333;                 /* Colors text block charcoal grey */
+    margin-bottom: 10px;            /* Puts structural clearance space directly beneath label */
+}
+
+/* Structural styling building the literal data timestamp placeholder box displayed in your wireframe */
+.time-box {
+    display: inline-block;          /* Compresses the wrapper box tightly around only the text string length */
+    width: 100%;                    /* Expands width limits safely */
+    max-width: 250px;               /* Snaps exact limits matching the visual wireframe boxes perfectly */
+    border: 1px solid #333333;      /* Draws a crisp border shell directly around display values */
+    padding: 12px;                  /* Adds interior safety padding to keep the text floating nicely inside */
+    font-size: 0.95rem;             /* Standard clean read size */
+    color: #555555;                 /* Medium grey font text styling for clean metadata display */
+}

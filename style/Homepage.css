@@ -1,0 +1,163 @@
+/* Master Structural Setup Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.ContentBox {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.SubTxt {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.SearchBar {
+    max-width: 550px;
+    margin: 0 auto 40px auto;
+}
+
+.SearchInput {
+    width: 100%;
+    height:50px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid #333333;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+}
+
+
+/*The Box container that hold the individual box*/
+.CatalogContainer {
+    padding: 25px;
+    background-color: #ffee00;
+    text-align: left;
+    margin-top: 20px;
+    border-radius:10px;
+    position: relative; /*for centering text*/
+    border: 4px solid #ffffff;
+}
+
+
+/*The hader of the box container*/
+.CatalogHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+
+.SectionTitle {
+  color: #000000; 
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute; /*To centr text*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Sort {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border-radius:10px;
+}
+
+/* 4-Column Row-Grid Matrix Wireframe Mapping Rules */
+.BookGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*3 box per row*/
+    gap: 25px;
+}
+
+.BookCard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*Individual Book Box*/
+.BookLinkBtn {
+    display: block;
+    border: 1px solid #333333;
+    padding: 35px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+    background-color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 0px 20px 20px 20px; /*round the edge, goes clockwise*/
+}
+
+/*The box hoxer effect*/
+.BookLinkBtn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.BookLinkBtn:hover .BookTitle {
+    color: #ffffff;
+}
+
+
+.BookTitle {
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    color:#000000;
+    font-weight:bold;
+    
+}
+
+
+.BookPrice {
+    font-weight:bold;
+    font-size: 1.0rem;
+    color: #000000;
+    text-align: left;
+    padding-left: 2px;
+    margin-bottom:30px;
+}
+
+/*The errom msg format*/
+.NoResult {
+    text-align: center;
+    color: #777777;
+    font-size: 1.1rem;
+    padding: 20px 0;
+}
+
+/* For smaller screen */
+@media (max-width: 900px) {
+    .books-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 550px) {
+    .books-grid { grid-template-columns: 1fr; }
+}

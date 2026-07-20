@@ -1,0 +1,52 @@
+.hdr-global-navbar { /*header box*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #333333;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.hdr-nav-left-zone {
+    display: flex;
+    align-items: center;
+}
+
+.hdr-nav-right-zone {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.hdr-nav-action-btn {
+    display: inline-block;
+    border: 0px solid #000000;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 8px 24px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 20px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hdr-nav-action-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.hdr-logout-spec {
+    font-weight: normal;
+}
+
+.hdr-active-db {
+    text-transform: none;
+}

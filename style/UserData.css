@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000;
+    color: #333333;
+}
+
+.ud-workspace-container {
+    padding: 40px 20px;
+}
+
+.ud-main-title {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.ud-inner-card-wrapper {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    border: 4px solid #000000;
+    padding: 40px 30px;
+    background-color: #ffee00;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.ud-search-panel-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.ud-oval-search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    border: 1px solid #333333;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.ud-split-layout-grid {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.ud-table-data-column {
+    flex: 3;
+    min-width: 0;
+}
+
+.ud-sort-wrapper-row {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ud-interactive-selector-dropdown {
+    padding: 8px 14px;
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    color: #333333;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.ud-rendered-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.ud-rendered-data-table th, 
+.ud-rendered-data-table td {
+    border: 2px solid #000000;
+    padding: 12px 14px;
+    color: #333333;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.ud-rendered-data-table th {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.ud-rendered-data-table tbody tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+.ud-rendered-data-table tbody tr:nth-child(even) td {
+    background-color: #a9a9a9;
+    color:#ffffff;
+}
+
+.ud-empty-placeholder-cell {
+    text-align: center;
+    color: #777777;
+    padding: 30px !important;
+    background-color: #ffffff;
+}
+
+.ud-metrics-stats-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    min-width: 200px;
+    padding-top: 45px;
+    border-radius:10px;
+}
+
+.ud-stat-group-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 80%;
+}
+
+.ud-stat-field-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.ud-stat-display-box-value {
+    border: 0px solid #000000;
+    padding: 10px 12px;
+    min-height: 38px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius:10px;
+
+}
+
+.ud-stat-numeric-text {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #000000;
+}

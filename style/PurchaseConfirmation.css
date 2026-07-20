@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000;
+    color: #333333;
+}
+
+
+.error-msg-box {
+    background-color: #ffffff;  
+    border: 2px solid #cc0000;    
+    border-radius: 10px;       
+    padding: 15px 20px; 
+    margin: 25px auto;           
+    max-width: 500px;       
+    text-align: left;            
+    font-size: 0.95rem;
+    color: #cc0000;   
+    font-weight:bold;
+}
+
+
+.error-msg-box strong {
+    color: #ffffff;
+    text-transform: uppercase;    
+    letter-spacing: 0.5px;
+}
+
+
+.Confirmation-Area {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.confirm-heading, 
+.success-heading, 
+.failed-heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.failed-heading {
+    color: #cc0000;
+}
+
+.success-message {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333333;
+    font-weight:bold;
+}
+
+.cost-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #000000;
+}
+
+.confirm-form {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 45px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+}
+
+.form-group label {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    padding: 10px 14px;
+    font-size: 1rem;
+    color: #000000;
+    outline: none;
+    min-height: 44px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-group input:disabled {
+    background-color: #e0e0e0;
+    color: #555555;
+    cursor: not-allowed;
+}
+
+.confirm-btn, 
+.cancel-btn, 
+.action-link {
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #000000;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 20px;
+}
+
+.confirm-btn {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.cancel-btn, 
+.action-link {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.confirm-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.cancel-btn:hover, 
+.action-link:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@media (max-width: 650px) {
+    .confirm-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .form-group {
+        width: 100%;
+        max-width: 280px;
+        align-items: center;
+    }
+    .form-group label {
+        align-self: center;
+    }
+}

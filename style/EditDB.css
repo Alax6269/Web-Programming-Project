@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000;
+    color: #333333;
+}
+
+.db-workspace-container {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+.db-main-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #ffffff;
+}
+
+.db-search-panel-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.db-oval-search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 11px 22px;
+    font-size: 0.95rem;
+    border: 1px solid #333333;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom:40px;
+}
+
+.db-split-layout-grid {
+    display: flex;
+    gap: 45px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.db-table-data-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.db-sort-wrapper-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.db-interactive-selector-dropdown {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.db-mysql-render-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    border-radius: 20px;
+}
+
+.db-mysql-render-table th, 
+.db-mysql-render-table td {
+    border: 2px solid #000000;
+    padding: 11px 12px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.db-mysql-render-table th {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+}
+
+.db-mysql-render-table th.text-center, 
+.db-mysql-render-table td.text-center {
+    text-align: center;
+}
+
+.db-mysql-render-table tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+.db-mysql-render-table tbody tr:nth-child(even) {
+    background-color: #a9a9a9;
+    color:#ffffff
+}
+
+.db-row-view-link {
+    display: inline-block;
+    padding: 6px 20px;
+    color: #333333;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: bold;
+    border: 1px solid #333333;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.db-row-view-link:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.db-empty-placeholder-cell {
+    text-align: center;
+    padding: 35px !important;
+    color: #777777;
+    font-style: italic;
+    background-color: #ffffff;
+}
+
+.db-metrics-action-sidebar {
+    width: 250px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.indicator-group-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.indicator-field-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.indicator-display-box-value {
+    width: 100%;
+    max-width: 150px;
+    border: 0px solid #000000;
+    background-color: #ffffff;
+    padding: 10px 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+}
+
+.action-trigger-wrapper {
+    margin-top: 5px;
+}
+
+.db-delete-action-btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    color: #333333;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    border-radius: 20px;
+}
+
+.db-delete-action-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.db-inner-card-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 3px solid #000000;/*The main Box*/
+    padding: 30px;
+    background-color: #ffee00;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+}
+
+.db-top-utility-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.db-wireframe-link-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    padding: 6px 20px;
+    color: #333333;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.1s ease;
+    border-radius: 20px;
+}
+
+.db-wireframe-link-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media (max-width: 950px) {
+    .db-split-layout-grid {
+        flex-direction: column;
+        gap: 35px;
+    }
+    .db-metrics-action-sidebar {
+        width: 100%;
+        padding-top: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 20px;
+    }
+    .indicator-group-block {
+        width: 45%;
+    }
+    .indicator-field-title {
+        color: #000000;
+    }
+}
